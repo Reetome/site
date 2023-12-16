@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background:#0f0f0f;
+}
+
+@keyframes LogoAnimation{
+    0%{filter: opacity(100%);}
+    50%{filter: opacity(50%);}
+    100%{filter: opacity(100%);}
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+
+    div{
+        height: 100%;
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+
+        .logo{
+            width: 150px;
+            height: 50px;
+            animation: LogoAnimation 2s infinite linear;
+    
+            a{
+                width: 100%;
+                height: 100%;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                    margin: 1%;
+                }
+    
+            }
+    
+        }   
+    
+        .blank{
+            width: 2%;
+            height: 100%;
+            margin: 0;
+        }
+
+        nav{
+            display: flex;
+
+            p{
+                padding: 0 20px;
+                font-size: 21.5px;
+                line-height: 60px;
+
+                a{
+                    transition: .4s;
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover{
+                        transition: .4s;
+                        color: rgba(255, 255, 255, 0.75);
+                        text-decoration: underline;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.work{
+    margin: 0 auto;
+    width: 55%;
+    height: fit-content;
+
+    a{
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 50px #000;
+        }
+
+    }
+
+}
+
+.blank{
+    width: 100%;
+    height: 6%;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background: rgba(125, 125, 125, 0.5);
+
+    .copyright{
+        font-size: 15px;
+        color: white;
+    }
+    
+    .inquiry{
+        font-size: 18px;
+        width: fit-content;
+        height: fit-content;
+        padding-top: 10px;
+        margin: 10px 0;
+
+        a{
+            width: fit-content;
+            padding: 10px;
+            background: #0d6efd;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+
+            &:hover{
+                filter: brightness(110%);
+            }
+
+        }
+
+    }
+    
+}
