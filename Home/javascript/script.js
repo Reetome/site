@@ -1,4 +1,8 @@
-function encode(text){
-    console.log(encodeURI(text));
-    console.log(text);
+let encodeText;
+let RandomText;
+let RandomInput;
+
+function EncodeExecution(){
+    encodeText = document.getElementById("EncodeInput").value;
+    document.getElementById("EncodeOutput").value=encodeURI(encodeText);
 }
